@@ -1,0 +1,106 @@
+{
+	"name": "Default color scheme",
+	"groups": {
+		"information:unimportant":  { "fg": "gray6", "bg": "black", "attrs": [] },
+		"information:additional":   { "fg": "gray6", "bg": "gray1", "attrs": [] },
+		"background":               { "fg": "white", "bg": "black", "attrs": [] },
+		"background:divider":       { "fg": "gray5", "bg": "black", "attrs": [] },
+		"mode":                     { "fg": "black", "bg": "mediumorange", "attrs": ["bold"] },
+		"visual_range":             { "fg": "gray1", "bg": "mediumgreen", "attrs": ["bold"] },
+		"modified_indicator":       { "fg": "brightyellow", "bg": "gray1", "attrs": ["bold"] },
+		"paste_indicator":          { "fg": "white", "bg": "mediumorange", "attrs": ["bold"] },
+		"readonly_indicator":       { "fg": "black", "bg": "red", "attrs": [] },
+		"branch_dirty":             { "fg": "", "bg": "gray1", "attrs": [] },
+		"branch:divider":           { "fg": "gray5", "bg": "gray1", "attrs": [] },
+		"file_name":                { "fg": "gray6", "bg": "gray1", "attrs": ["bold"] },
+		"window_title":             { "fg": "white", "bg": "gray1", "attrs": [] },
+		"file_name_no_file":        { "fg": "gray9", "bg": "gray1", "attrs": ["bold"] },
+		"file_vcs_status":          { "fg": "red", "bg": "gray1", "attrs": [] },
+		"file_vcs_status_M":        { "fg": "brightyellow", "bg": "gray1", "attrs": [] },
+		"file_vcs_status_A":        { "fg": "brightgreen", "bg": "gray1", "attrs": [] },
+		"line_percent":             { "fg": "gray9", "bg": "gray1", "attrs": [] },
+		"line_percent_gradient":    { "fg": "mediumorange", "bg": "gray0", "attrs": [] },
+		"position":                 { "fg": "brightorange", "bg": "gray0", "attrs": [] },
+		"position_gradient":        { "fg": "brightorange", "bg": "gray0", "attrs": [] },
+		"line_current":             { "fg": "gray6", "bg": "gray1", "attrs": ["bold"] },
+		"line_current_symbol":      { "fg": "gray5", "bg": "gray1", "attrs": [] },
+		"virtcol_current_gradient": { "fg": "black", "bg": "mediumorange", "attrs": [] },
+		"col_current":              { "fg": "gray6", "bg": "gray1", "attrs": [] },
+		"modified_buffers":         { "fg": "gray0", "bg": "mediumorange", "attrs": [] },
+		"attached_clients":         { "fg": "black", "bg": "red", "attrs": [] },
+		"error":                    { "fg": "black", "bg": "red", "attrs": ["bold"] },
+		"warning":                  { "fg": "black", "bg": "red", "attrs": ["bold"] },
+		"current_tag":              { "fg": "gray6", "bg": "gray0", "attrs": [] },
+
+		"tab_nc:modified_indicator": { "fg": "mediumorange", "bg": "gray0", "attrs": ["bold"] }
+	},
+	"mode_translations": {
+		"nc": {
+			"colors": {
+				"gray7": "gray6",
+				"gray8": "gray6",
+				"gray9": "gray6",
+				"gray10": "gray6",
+				"white": "gray6"
+			}
+		},
+		"i": {
+			"colors": {
+				"gray5": "darkcyan",
+				"gray6": "darkcyan",
+				"brightorange": "darkblue",
+				"brightestorange": "darkblue",
+				"darkorange": "darkblue",
+				"mediumorange": "darkblue"
+			},
+			"groups": {
+				"mode":               { "fg": "gray0", "bg": "darkblue", "attrs": ["bold"] }
+			}
+		},
+		"v": {
+			"colors": {
+				"gray5": "mediumgreen",
+				"gray6": "mediumgreen",
+				"brightorange": "mediumgreen",
+				"mediumorange": "darkgreen"
+			},
+			"groups": {
+				"mode": { "fg": "black", "bg": "darkgreen", "attrs": ["bold"] }
+			}
+		},
+		"V": {
+			"colors": {
+				"gray0": "gray1",
+				"gray1": "gray2",
+				"black": "gray0",
+				"gray5": "mediumgreen",
+				"gray6": "mediumgreen",
+				"brightorange": "mediumgreen",
+				"mediumorange": "darkgreen"
+            },
+			"groups": {
+				"mode": { "fg": "black", "bg": "green", "attrs": ["bold"] }
+			}
+		},
+		"^V": {
+			"colors": {
+				"gray5": "mediumgreen",
+				"gray6": "mediumgreen",
+				"brightorange": "mediumgreen",
+				"mediumorange": "green"
+            },
+			"groups": {
+				"mode": { "fg": "black", "bg": "green", "attrs": ["bold"] }
+			}
+		},
+		"R": {
+			"colors": {
+				"brightorange": "brighesttred",
+				"mediumorange": "brightestred"
+            },
+			"groups": {
+				"mode": { "fg": "gray6", "bg": "red", "attrs": ["bold"] }
+			}
+		}
+	}
+}
