@@ -1,14 +1,12 @@
-{
-	"groups": {
-		"active_window_status": {"fg": "mediumorange",   "bg": "black",    "attrs": []},
-		"window_status":        {"fg": "gray6",     "bg": "black",    "attrs": []},
-		"activity_status":      {"fg": "mediumorange",     "bg": "gray1",    "attrs": []},
-		"bell_status":          {"fg": "black",        "bg": "red",    "attrs": []},
-		"window":               {"fg": "gray6",      "bg": "black",    "attrs": []},
-		"window:divider":       {"fg": "gray6",      "bg": "black",    "attrs": []},
-		"window:current":       {"fg": "mediumorange", "bg": "black", "attrs": []},
-		"window_name":          {"fg": "mediumorange",      "bg": "black", "attrs": ["bold"]},
-		"session":              {"fg": "gray0",      "bg": "mediumorange",   "attrs": ["bold"]},
-		"session:prefix":       {"fg": "gray0",     "bg": "mediumorange", "attrs": ["bold"]}
-	}
+{ "groups": { "active_window_status": { "fg": "mediumorange",   "bg": "gray2",        "attrs": [] }
+          , "window_status":        { "fg": "gray6",          "bg": "gray1",        "attrs": [] }
+          , "activity_status":      { "fg": "mediumorange",   "bg": "gray1",        "attrs": [] }
+          , "bell_status":          { "fg": "black",          "bg": "red",          "attrs": [] }
+          , "window":               { "fg": "gray6",          "bg": "gray1",        "attrs": [] }
+          , "window:divider":       { "fg": "gray6",          "bg": "gray1",        "attrs": [] }
+          , "window:current":       { "fg": "mediumorange",   "bg": "gray1",        "attrs": [] }
+          , "window_name":          { "fg": "mediumorange",   "bg": "gray1",        "attrs": ["bold"] }
+          , "session":              { "fg": "gray0",          "bg": "mediumorange", "attrs": ["bold"] }
+          , "session:prefix":       { "fg": "gray0",          "bg": "mediumorange", "attrs": ["bold"] }
+          }
 }
