@@ -1,1 +1,3 @@
-sudo cp -rv ./colorschemes ./colors.json ./config.json ./themes /usr/lib/python3.6/site-packages/powerline/config_files/
+sudo cp -rv ./colorschemes /usr/lib/python3.7/site-packages/powerline/config_files/
+sudo cp -rv ./colors.json /usr/lib/python3.7/site-packages/powerline/config_files/
+sudo cp -rv ./config.json /usr/lib/python3.7/site-packages/powerline/config_files/
