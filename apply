@@ -1,3 +1,9 @@
-sudo cp -rv ./colorschemes /usr/lib/python3.12/site-packages/powerline/config_files/
-sudo cp -rv ./colors.json /usr/lib/python3.12/site-packages/powerline/config_files/
-sudo cp -rv ./config.json /usr/lib/python3.12/site-packages/powerline/config_files/
+#!/bin/sh
+
+powerline_dir="$(find /usr/lib/python* -type d -path "*/site-packages/powerline/config_files" 2>/dev/null)/"
+echo "moving configs to $powerline_dir"
+
+
+sudo cp -rv ./colorschemes $powerline_dir
+sudo cp -rv ./colors.json  $powerline_dir
+sudo cp -rv ./config.json  $powerline_dir
