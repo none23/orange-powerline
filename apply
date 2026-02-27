@@ -1,9 +1,22 @@
 #!/bin/sh
 
-powerline_dir="$(find /usr/lib/python* -type d -path "*/site-packages/powerline/config_files" 2>/dev/null)/"
+set -eu
+
+powerline_dir="$(
+  find /usr/lib/python* -type d -path "*/site-packages/powerline" 2>/dev/null | head -n 1
+)"
+
+if [ -z "$powerline_dir" ]; then
+  echo "Could not find powerline install dir under /usr/lib/python*/site-packages/powerline" >&2
+  exit 1
+fi
+
 echo "moving configs to $powerline_dir"
 
 
-sudo cp -rv ./colorschemes $powerline_dir
-sudo cp -rv ./colors.json  $powerline_dir
-sudo cp -rv ./config.json  $powerline_dir
+sudo cp -r ./colorschemes "$powerline_dir/config_files/"
+sudo cp ./colors.json "$powerline_dir/config_files/"
+sudo cp ./config.json "$powerline_dir/config_files/"
+
+echo "fixing git reftable support"
+sudo cp ./lib/vcs/git.py "$powerline_dir/lib/vcs/git.py"
